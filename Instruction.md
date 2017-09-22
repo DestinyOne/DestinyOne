@@ -1,6 +1,6 @@
 ## Letting ubuntu bash on Windows 10 run 'ssh -X'  to get a GUI environment in a remote server
 
-#First
+- First
 Intall all the following. On Window, install Xming. On Ubuntu bash, use 'sudo apt install' to install 'ssh sshd xauth xorg'.
 Second, go to the folder contains 'ssh_config' file, mine is '/etc/ssh'.
 Third, edit 'ssh_config' as administrator. Inside 'ssh_config', remove the hash '#' in the lines 'ForwardAgent', 'ForwardX11', 'ForwardX11Trusted', and set the corresponding arguments to 'yes'.
