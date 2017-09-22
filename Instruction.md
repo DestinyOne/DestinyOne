@@ -15,6 +15,8 @@ Go to the folder contains `ssh_config` file, mine is `/etc/ssh`.
 
 Edit `ssh_config` as administrator(USE `sudo`). Inside `ssh_config`, remove the hash `#` in the lines `ForwardAgent`, `ForwardX11`, `ForwardX11Trusted`, and set the corresponding arguments to `yes`.
 ```
+# /etc/ssh/ssh_config
+
 Host *
     ForwardAgent yes
     ForwardX11 yes
@@ -24,6 +26,8 @@ Host *
 
 In `ssh_config` file, remove the front hash `#` before `Port 22` and `Protocol 2`, and also append a new line at the end of the file to state the xauth file location, `XauthLocaion /usr/bin/xauth`, remember write your own path of xauth file.
 ```
+# /etc/ssh/ssh_config
+
 #   IdentifyFile ...
     Port 22
     Protocol 2
