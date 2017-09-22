@@ -22,6 +22,16 @@ Host *
 ```
 - Forth
 
-In 'ssh_config' file, remove the front hash '#' before 'Port 22' and 'Protocol 2', and also append a new line at the end of the file to state the xauth file location, 'XauthLocaion /usr/bin/xauth', remember write your own path of xauth file.
+In `ssh_config` file, remove the front hash `#` before `Port 22` and `Protocol 2`, and also append a new line at the end of the file to state the xauth file location, `XauthLocaion /usr/bin/xauth`, remember write your own path of xauth file.
+```
+#   IdentifyFile ...
+    Port 22
+    Protocol 2
+#   Cipher 3des
+...
+    GSSAPIDelegateCredentials no
+    XauthLocaion /usr/bin/xauth
+```
+
 Fifth, now since we are done editing 'ssh_config' file, save it when we leave the editor. Now go to folder '~' or '$HOME', append 'export DISPLAY=localhost:0' to your '.bashrc' file and save it.
 Last, we are almost done. Restart your bash shell, open your Xming program and use 'ssh -X yourusername@yourhost'. Then enjoy the GUI environment.
