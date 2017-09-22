@@ -2,7 +2,7 @@
 
 - First
 
-Intall all the following. On Window, install Xming. On Ubuntu bash, use `sudo apt install` to install `ssh xauth xorg`.
+Install all the followings. On Window, install `Xming`. On Ubuntu bash, use `sudo apt install` to install `ssh xauth xorg`.
 ```
 sudo apt install ssh xauth xorg
 ```
