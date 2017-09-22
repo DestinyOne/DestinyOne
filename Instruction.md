@@ -1,8 +1,8 @@
-# Letting ubuntu bash on Windows 10 run 'ssh -X'  to get a GUI environment in a remote server
+# Letting Ubuntu bash on Windows 10 run 'ssh -X'  to get a GUI environment on a remote server
 
 - First
 
-Install all the followings. On Window, install `Xming`. On Ubuntu bash, use `sudo apt install` to install `ssh xauth xorg`.
+Install all the following. On Window, install `Xming`. On Ubuntu bash, use `sudo apt install` to install `ssh xauth xorg`.
 
 ```bash
 sudo apt install ssh xauth xorg
