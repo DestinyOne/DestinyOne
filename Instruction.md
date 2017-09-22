@@ -13,7 +13,7 @@ Go to the folder contains `ssh_config` file, mine is `/etc/ssh`.
 
 - Third
 
-Edit `ssh_config` as administrator. Inside `ssh_config`, remove the hash `#` in the lines `ForwardAgent`, `ForwardX11`, `ForwardX11Trusted`, and set the corresponding arguments to `yes`.
+Edit `ssh_config` as administrator(USE `sudo`). Inside `ssh_config`, remove the hash `#` in the lines `ForwardAgent`, `ForwardX11`, `ForwardX11Trusted`, and set the corresponding arguments to `yes`.
 ```
 Host *
     ForwardAgent yes
