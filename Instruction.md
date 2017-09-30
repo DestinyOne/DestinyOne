@@ -1,18 +1,18 @@
-# Letting ubuntu bash on Windows 10 run 'ssh -X'  to get a GUI environment in a remote server
+# Letting Ubuntu bash on Windows 10 run 'ssh -X'  to get a GUI environment on a remote server
 
-- First
+-   First
 
-Install all the followings. On Window, install `Xming`. On Ubuntu bash, use `sudo apt install` to install `ssh xauth xorg`.
+Install all the following. On Window, install `Xming`. On Ubuntu bash, use `sudo apt install` to install `ssh xauth xorg`.
 
 ```bash
 sudo apt install ssh xauth xorg
 ```
 
-- Second
+-   Second
 
 Go to the folder contains `ssh_config` file, mine is `/etc/ssh`.
 
-- Third
+-   Third
 
 Edit `ssh_config` as administrator(USE `sudo`). Inside `ssh_config`, remove the hash `#` in the lines `ForwardAgent`, `ForwardX11`, `ForwardX11Trusted`, and set the corresponding arguments to `yes`.
 
@@ -25,7 +25,7 @@ Host *
     ForwardX11Trusted yes
 ```
 
-- Forth
+-   Forth
 
 In `ssh_config` file, remove the front hash `#` before `Port 22` and `Protocol 2`, and also append a new line at the end of the file to state the xauth file location, `XauthLocaion /usr/bin/xauth`, remember write your own path of xauth file.
 
@@ -44,7 +44,7 @@ In `ssh_config` file, remove the front hash `#` before `Port 22` and `Protocol 2
     XauthLocaion /usr/bin/xauth
 ```
 
-- Fifth
+-   Fifth
 
 Now since we are done editing `ssh_config` file, save it when we leave the editor. Now go to folder `~` or `$HOME`, append `export DISPLAY=localhost:0` to your `.bashrc` file and save it.
 
@@ -54,8 +54,7 @@ Now since we are done editing `ssh_config` file, save it when we leave the edito
 ...
 export DISPLAY=localhost:0
 ```
-
-- Last
+-   Last
 
 We are almost done. Restart your bash shell, open your `Xming` program and use `ssh -X yourusername@yourhost`. Then enjoy the GUI environment.
 
