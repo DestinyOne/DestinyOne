@@ -1,6 +1,6 @@
 # Websitess Design Learning 09/30/17
 
-- ## video: [Tyler Moore]<a href="https://www.youtube.com/watch?v=sd0grLQ4voU" target="_blank">example</a>
+- ## video: Tyler Moore<a href="https://www.youtube.com/watch?v=sd0grLQ4voU" target="_blank">Youtube</a>
 
 - ## Requirements
 
