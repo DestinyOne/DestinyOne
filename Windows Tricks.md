@@ -41,3 +41,7 @@ OR (when newer versions are going to be shipped)
 **7.** Finally run iCloud64.msi and reboot
 
 **8.** Say "Thank you Apple Inc. for this wonderful evening!"
+
+- [x] Mercury
+
+- [ ] dadf
