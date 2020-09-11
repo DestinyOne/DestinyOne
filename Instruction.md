@@ -41,7 +41,7 @@ In `ssh_config` file, remove the front hash `#` before `Port 22` and `Protocol 2
     ...
     ...
     GSSAPIDelegateCredentials no
-    XauthLocaion /usr/bin/xauth
+    XauthLocation /usr/bin/xauth
 ```
 
 -   Fifth
